@@ -21,9 +21,9 @@
                 </p>
             </div>
             <div class="row" ng-show="vm.showColors">
-                <div class="col-md-2" ng-repeat="(id, name) in vm.colors">
+                <div class="col-md-2" ng-repeat="(id.toString(), name) in vm.colors">
                     <div class="box">
-                        <img ng-src="colors/{{id.toString()}}.png" ng-attr-nana="{{'' + id}}" />
+                        <img ng-src="colors/{{id}}.png" ng-attr-nana="{{id}}" />
                     </div>
                     {{name}}
                     <input type="checkbox" ng-model="vm.selectedColors[id]" />
