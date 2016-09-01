@@ -23,7 +23,7 @@
       <div class="row" ng-show="vm.showColors">
         <div class="col-md-4" ng-repeat="color in vm.colors">
           <div class="box">
-            <img ng-src="'colors/' + color.name + '.png'" />
+            <img ng-src="{{'colors/' + color.name + '.png'}}" />
           </div>
           {{color.name}}
           <input type="checkbox" ng-model="vm.selectedColors[color.name]" />
