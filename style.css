@@ -1,0 +1,9 @@
+/* Put your css in here */
+body {
+  text-align: center;
+}
+.box {
+  width: 50%;
+  padding-top: 50%;
+  margin-left: 25%;
+}
