@@ -14,9 +14,7 @@ function ctrl ($uibModal, Data) {
       
     vm.submit = function () {
         
-        var selectedColors = Object.keys(vm.selectedColors).filter(function (color) {
-            return vm.selectedColors[color];
-        });
+        var selectedColors = Data.getSelectedColorArray(vm.selectedColors);
     
         $uibModal.open({
             templateUrl: 'modal.html',
