@@ -5,8 +5,8 @@
     <div class="modal-body">
         <div class="row">
             <div class="col-md-6" ng-repeat="color in mvm.selectedColors">
-                <img ng-src="{{}}" />
-                <p ng-bind="color"></p>
+                <img ng-src="colors/{{color.id}}.png" />
+                <p ng-bind="color.name"></p>
             </div>
         </div>
         <div class="row">
