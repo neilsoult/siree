@@ -4,35 +4,35 @@ angular.module('data.factory', ['plunker'])
 dataFactory.$inject = ['$http'];
 function dataFactory ($http) {
   
-  var data;
+    var data;
   
-  return {
-    initView: init,
-    showColors: showColors
-  };
+    return {
+        initView: init,
+        showColors: showColors
+    };
   
-  function init (vm) {
+    function init (vm) {
     
-    $http.get('data.json')
-    .then(function success (response) {
+        $http.get('data.json')
+        .then(function success (response) {
       
-      data = response.data;
-      vm.styles = data.styles;
-    })
-    .catch(function fail (message) {
+            data = response.data;
+            vm.styles = data.styles;
+        })
+        .catch(function fail (message) {
       
-      alert(JSON.stringify(message));
-    })
-  }
+            alert(JSON.stringify(message));
+        })
+    }
   
-  function showColors (vm, style) {
+    function showColors (vm, style) {
     
-    var colors = data.colors.filter(function (color) {
+        var colors = style.colors.map(function (id) {
       
-      return style.colors.indexOf(color.id) > -1;
-    });
-    vm.selectedStyle = style;
-    vm.colors = colors;
-    vm.showColors = true;
-  }
+            return data.colors[id];
+        });
+        vm.selectedStyle = style;
+        vm.colors = colors;
+        vm.showColors = true;
+    }
 }
