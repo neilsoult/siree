@@ -7,10 +7,23 @@ function dataFactory ($http) {
     var data;
   
     return {
+        getSelectedColorArray: getArray,
         initView: init,
         showColors: showColors
     };
   
+    function getArray (selectedColors) {
+        
+        return Object.keys(selectedColors)
+        .map(function (id) {
+            
+            return {
+                id: id,
+                name: data.color[id]
+            };
+        });    
+    }
+    
     function init (vm) {
     
         $http.get('data.json')
