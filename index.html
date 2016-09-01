@@ -21,7 +21,7 @@
                 </p>
             </div>
             <div class="row" ng-show="vm.showColors">
-                <div class="col-md-2" ng-repeat="(id.toString(), name) in vm.colors">
+                <div class="col-md-2" ng-repeat="id in Object.keys(vm.colors)">
                     <div class="box">
                         <img ng-src="colors/{{id}}.png" ng-attr-nana="{{id}}" />
                     </div>
