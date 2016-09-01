@@ -1,15 +1,16 @@
 <div>
-  <div class="modal-header">
-    <h1 ng-bind="mvm.title"></h1>
-  </div>
-  <div class="modal-body">
-    <div class="row">
-      <div class="col-md-6" ng-repeat="color in mvm.selectedColors">
-        <p ng-bind="color"></p>
-      </div>
+    <div class="modal-header">
+        <h1 ng-bind="mvm.title"></h1>
     </div>
-    <div class="row">
-      <button ng-click="mvm.close()">CLOSE</button>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6" ng-repeat="color in mvm.selectedColors">
+                <img ng-src="{{}}" />
+                <p ng-bind="color"></p>
+            </div>
+        </div>
+        <div class="row">
+            <button ng-click="mvm.close()">CLOSE</button>
+        </div>
     </div>
-  </div>
 </div>
