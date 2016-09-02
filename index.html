@@ -24,7 +24,7 @@
                 <div class="col-md-2" ng-repeat="color in vm.colors">
                     <div class="box">
                         <img ng-src="colors/{{color.id}}.png" />
-                        {{color.name}}
+                        <span>{{color.name}}</span>
                         <input type="checkbox" ng-model="vm.selectedColors[color.id]" />
                     </div>
                 </div>
