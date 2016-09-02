@@ -19,7 +19,7 @@ function dataFactory ($http) {
             
             return {
                 id: id,
-                name: data.color[id]
+                name: data.colors[id]
             };
         });    
     }
