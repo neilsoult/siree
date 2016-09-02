@@ -42,7 +42,10 @@ function dataFactory ($http) {
     
         var colors = style.colors.map(function (id) {
       
-            return data.colors[id];
+            return {
+              id: id,
+              name: data.colors[id]
+            };
         });
         vm.selectedStyle = style;
         vm.colors = colors;
