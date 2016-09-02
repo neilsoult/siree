@@ -2,3 +2,6 @@
 body {
     text-align: center;
 }
+.box .wrap {
+    height: 3em;
+}
