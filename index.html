@@ -21,12 +21,12 @@
                 </p>
             </div>
             <div class="row" ng-show="vm.showColors">
-                <div class="col-md-2" ng-repeat="id in Object.keys(vm.colors)">
+                <div class="col-md-2" ng-repeat="color in vm.colors">
                     <div class="box">
-                        <img ng-src="colors/{{id}}.png" ng-attr-nana="{{id}}" />
+                        <img ng-src="colors/{{color.id}}.png" />
                     </div>
-                    {{name}}
-                    <input type="checkbox" ng-model="vm.selectedColors[id]" />
+                    {{color.name}}
+                    <input type="checkbox" ng-model="vm.selectedColors[color.id]" />
                 </div>
                 <div class="col-md-12">
                     <button class="btn btn-cancel" ng-click="vm.showColors = false">back</button>
