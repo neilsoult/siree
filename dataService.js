@@ -12,7 +12,7 @@ function dataFactory ($http) {
         showColors: showColors
     };
   
-    function getArray (selectedColors) {
+    function getArray (selectedColors) { console.log(selectedColors);
         
         return Object.keys(selectedColors)
         .map(function (id) {
@@ -43,8 +43,8 @@ function dataFactory ($http) {
         var colors = style.colors.map(function (id) {
       
             return {
-              id: id,
-              name: data.colors[id]
+                id: id,
+                name: data.colors[id]
             };
         });
         vm.selectedStyle = style;
