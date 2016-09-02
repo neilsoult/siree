@@ -3,15 +3,15 @@ angular.module('data.factory', ['plunker'])
 
 dataFactory.$inject = ['$http'];
 function dataFactory ($http) {
-  
+
     var data;
-  
+
     return {
         getSelectedColorArray: getArray,
         initView: init,
         showColors: showColors
     };
-  
+    
     function getArray (selectedColors) { console.log(selectedColors);
         
         return Object.keys(selectedColors)
@@ -37,13 +37,13 @@ function dataFactory ($http) {
             alert(JSON.stringify(message));
         })
     }
-  
+    
     function showColors (vm, style) {
     
-        var colors = style.colors.map(function (id) {
+        var colors = style.colors.map(function (id) {console.log(id);
       
             return {
-                id: id,
+                id: id.toString(),
                 name: data.colors[id]
             };
         });
