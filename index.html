@@ -21,7 +21,7 @@
                 </p>
             </div>
             <div class="row" ng-show="vm.showColors">
-                <div class="col-md-2" ng-repeat="color in vm.colors">
+                <div class="col-md-2" ng-repeat="color in vm.colors | orderBy: 'name'">
                     <div class="box">
                         <img ng-src="colors/{{color.id}}.png" />
                         <div class="wrap">
