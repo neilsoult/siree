@@ -17,7 +17,7 @@
         <div class="content-fluid">
             <div class="row text-left" ng-show="!vm.showColors">
                 <p ng-repeat="style in vm.styles">
-                    <button class="btn btn-primary" ng-bind="style.name" ng-click="vm.selectStyle(style)"></button>
+                    <button class="btn btn-primary" ng-bind="style.name + '(#' + style.id + ')'" ng-click="vm.selectStyle(style)"></button>
                 </p>
             </div>
             <div class="row" ng-show="vm.showColors">
