@@ -4,7 +4,7 @@
     </div>
     <div class="modal-body">
         <div class="row">
-            <div class="col-md-6" ng-repeat="color in mvm.selectedColors">
+            <div class="col-md-6" ng-repeat="color in mvm.selectedColors | orderBy: 'name'">
                 <img ng-src="colors/{{color.id}}.png" />
                 <p ng-bind="color.name"></p>
             </div>
