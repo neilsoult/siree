@@ -16,7 +16,7 @@
     <body class="container" ng-controller="MainCtrl as vm">
         <div class="content-fluid">
             <div class="row text-left" ng-show="!vm.showColors">
-                <p ng-repeat="style in vm.styles">
+                <p ng-repeat="style in vm.styles | orderBy: 'id'">
                     <button class="btn btn-primary" ng-bind="style.id + ' - ' + style.name" ng-click="vm.selectStyle(style)"></button>
                 </p>
             </div>
