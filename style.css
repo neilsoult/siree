@@ -1,7 +1,6 @@
 /* Put your css in here */
 body {
     text-align: center;
-    font-size: 30px;
 }
 
 img {
@@ -14,4 +13,5 @@ img {
 
 .col-md-6 {
     text-align: left;
+    font-size: 14px;
 }
