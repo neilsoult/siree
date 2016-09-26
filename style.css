@@ -10,3 +10,7 @@ img {
 .box .wrap {
     height: 3em;
 }
+
+.col-md-6 {
+    text-align: left;
+}
