@@ -25,8 +25,8 @@
                     <div class="box">
                         <img ng-src="colors/{{color.id}}.png" />
                         <div class="wrap">
-                            <span>{{color.id}}. {{color.name}}</span>
                             <input type="checkbox" ng-model="vm.selectedColors[color.id]" />
+                            <span>{{color.name}} ({{color.id}})</span>                  
                         </div>
                     </div>
                 </div>
