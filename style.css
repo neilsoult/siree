@@ -23,3 +23,8 @@ img {
 .modal-dialog {
     width: 750px;
 }
+
+.btn btn-primary {
+    font-size:100%;
+    
+}
