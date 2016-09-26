@@ -2,6 +2,11 @@
 body {
     text-align: center;
 }
+
+img {
+    padding-right: 10px;
+}
+
 .box .wrap {
     height: 3em;
 }
