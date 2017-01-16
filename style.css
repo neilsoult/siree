@@ -15,7 +15,7 @@ img {
 
 .col-md-6 {
     text-align: left;
-    font-size: 150%;
+    font-size: 120%;
     font-weight: bold;
     color: #666666;
 }
@@ -25,5 +25,5 @@ img {
 }
 
 .btn btn-primary {
-    font-size:120%;
+    font-size:150%;
 }
