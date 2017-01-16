@@ -15,13 +15,13 @@ img {
 
 .col-md-6 {
     text-align: left;
-    font-size: 120%;
+    font-size: 130%;
     font-weight: bold;
     color: #666666;
 }
 
 .modal-dialog {
-    width: 750px;
+    width: 900px;
 }
 
 .btn btn-primary {
